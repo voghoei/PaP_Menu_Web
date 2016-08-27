@@ -5,7 +5,6 @@ package PaP.control;
  * and open the template in the editor.
  */
 import PaP.PaPException;
-import PaP.control.LoginControl;
 import PaP.model.ObjectModel;
 import PaP.model.RegisteredUser;
 import PaP.model.impl.ObjectModelImpl;
@@ -13,10 +12,8 @@ import PaP.persistence.Persistence;
 import PaP.persistence.impl.DbUtils;
 import PaP.persistence.impl.PersistenceImpl;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.util.*;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpSession;
 
@@ -104,7 +101,7 @@ public class LoginControl {
 
             // Try
             RegisteredUser modelUser = this.objectModel.createRegisteredUser();
-            modelUser.setFirstName(username);
+            modelUser.setUserName(username);
             modelUser.setPassword(password);
 
             // Fetch from DB
@@ -114,9 +111,9 @@ public class LoginControl {
                 runningUser = userIter.next();
                 // Check for approval before access
                 
-                this.hasError = true;
-                this.error = "Your account has not been approved yet. Please pay the membership fee and the administrator will approve it.";
-                return false;
+                    session.setAttribute("currentSessionUser", runningUser);
+                    session.setAttribute("currentSessionTimestamp", new Date());
+                    return true;               
             } else {
                 return false;
             }

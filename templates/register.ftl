@@ -22,6 +22,14 @@
                         <label for="name">Last Name</label>
                         <input type="text" class="form-control" placeholder="Last Name" name="lname">
                 </div>
+                <div classs="form-group">
+                        <label for="email">State</label>
+                        <input type="email" class="form-control" placeholder="State" name="estate">
+                </div>
+                <div classs="form-group">
+                        <label for="email">Address</label>
+                        <input type="email" class="form-control" placeholder="Address" name="address">
+                </div>
 		<div classs="form-group">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" placeholder="Email" name="email">
@@ -31,10 +39,6 @@
                         <input type="tel" class="form-control" placeholder="Phone Number" name="phone">
                 </div>
                 <div classs="form-group">
-                        <label for="texts">Phone Accepts Texts?</label>
-                        <input type="checkbox" class="form-control" name="texts">
-                </div>
-		<div classs="form-group">
                         <label for="password">Enter a password</label>
                         <input type="password" class="form-control" placeholder="Password" name="password">
                 </div>
