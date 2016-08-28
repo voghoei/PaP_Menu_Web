@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import PaP.model.RegisteredUser;
 import java.io.PrintWriter;
+import javax.servlet.annotation.WebServlet;
 
 
 /**
