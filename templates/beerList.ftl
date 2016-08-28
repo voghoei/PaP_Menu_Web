@@ -1,6 +1,6 @@
 <#import "default.ftl" as default>
 <@default.mainLayout "Register">
-<h1>Register Manager</h1>
+<h1>Register for DawgTrades</h1>
 <#if error??>
         <div class="col-md-12 alert alert-danger" role="alert">
                 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>

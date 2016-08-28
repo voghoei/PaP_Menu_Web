@@ -1,20 +1,18 @@
-package edu.uga.dawgtrades.ui;
+package PaP.ui;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import edu.uga.dawgtrades.DTException;
-import edu.uga.dawgtrades.control.LoginControl;
+import PaP.PaPException;
+import PaP.control.LoginControl;
 import java.io.IOException;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import edu.uga.dawgtrades.model.RegisteredUser;
+import PaP.model.RegisteredUser;
 
 
 /**
